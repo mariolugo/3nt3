@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "angular-socket-io": "~0.7.0",
-    "ngmap": "~1.16.1"
+    "ngmap": "~1.16.1",
+    "ngCordova": "~0.1.23-alpha"
   }
 }

@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app', ['ionic','btford.socket-io'])
+  angular.module('app', ['ionic','ngCordova'])
     .config(configBlock)
     .run(runBlock);
 
@@ -90,6 +90,7 @@
   };
 
   function runBlock($rootScope){
+
     $rootScope.safeApply = function(fn){
       var phase = this.$root ? this.$root.$$phase : this.$$phase;
       if(phase === '$apply' || phase === '$digest'){
@@ -100,5 +101,8 @@
         this.$apply(fn);
       }
     };
+
   }
+
+
 })();

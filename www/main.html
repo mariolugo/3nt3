@@ -12,11 +12,13 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
     <!-- ionic/angularjs js -->
+    <script src="https://cdn.socket.io/socket.io-1.4.1.min.js"></script>
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="lib/lodash/lodash.min.js"></script>
     <script src="lib/moment/min/moment.min.js"></script>
     <script src="lib/moment/locale/fr.js"></script>
-
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCDSF206Paot5WEl5LbGNLT1xHFn91rWTU&sensor=true"></script>
     <!-- cordova script (you can setup plugin mocks here) -->
     <script src="cordova.js"></script>
     
@@ -36,11 +38,14 @@
     <script src="layout/loading.ctrl.js"></script>
     <script src="layout/layout.ctrl.js"></script>
     <script src="authentication/login.ctrl.js"></script>
-    <script src="map/map.ctrl.js"></script>
+    <script src="map/sockets.js"></script>
     <script src="map/map.srv.js"></script>
+    <script src="map/map.ctrl.js"></script>
+   
+    
     <script src="settings/settings.ctrl.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCDSF206Paot5WEl5LbGNLT1xHFn91rWTU&sensor=true"></script>
-    <script src="lib/angular-socket-io/socket.js"></script>
+    
+    
   </head>
   <body ng-app="app">
     <ion-nav-view></ion-nav-view>
